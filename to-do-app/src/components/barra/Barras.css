@@ -1,0 +1,131 @@
+.barras {
+  display: grid;
+  grid-template-columns: 1fr 320px; /* izquierda flexible, derecha fija */
+  grid-template-rows: auto auto;     /* fila título, fila inputs */
+  gap: 12px 20px;
+  background-color: #fdf6ec; /* beige suave */
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  max-width: 980px;
+  margin: 20px auto;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Título (ocupa toda la primera fila) */
+.titulo {
+  grid-column: 1 / -1; /* ocupa todas las columnas */
+  margin: 0;
+  font-size: 1.8rem;
+  color: #444;
+  font-weight: 600;
+  align-self: center;
+}
+
+/* -----------------------------------
+   Fila 2 - izquierda: agregar tarea
+   (este bloque queda en la columna 1)
+   ----------------------------------- */
+.fila2 {
+  grid-column: 1 / 2; /* columna izquierda */
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  width: 100%;
+}
+
+/* Input agregar tarea (ocupa el espacio disponible) */
+.barraTarea {
+  flex: 1;
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 2px solid #cdb4db; /* violeta pastel */
+  background-color: #fff8f0;
+  font-size: 1rem;
+  outline: none;
+  transition: border-color .2s;
+}
+.barraTarea:focus { border-color: #a984d6; }
+
+/* Botón agregar */
+.botonAgregar {
+  padding: 10px 16px;
+  border-radius: 8px;
+  border: none;
+  background-color: #ffb4a2; /* coral pastel */
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color .2s, transform .05s;
+}
+.botonAgregar:hover { background-color: #e5989b; }
+.botonAgregar:active { transform: translateY(1px); }
+
+/* -----------------------------------
+   Fila 2 - derecha: buscar + contador
+   (este bloque queda en la columna 2)
+   ----------------------------------- */
+.buscar {
+  grid-column: 2 / 3;              /* columna derecha */
+  display: grid;
+  grid-template-columns: 1fr auto; /* input | botón */
+  grid-template-rows: auto auto;   /* fila 1: input+botón, fila 2: contador */
+  gap: 8px 10px;
+  align-items: center;
+  justify-items: end;
+  width: 100%;
+}
+
+/* Input búsqueda (columna 1 dentro de .buscar) */
+.barraBusqueda {
+  grid-column: 1 / 2;
+  padding: 10px 10px;
+  border-radius: 8px;
+  border: 2px solid #bde0fe; /* celeste pastel */
+  background-color: #fff8f0;
+  font-size: 0.95rem;
+  width: 100%;
+  outline: none;
+  transition: border-color .2s;
+}
+.barraBusqueda:focus { border-color: #8ecae6; }
+
+/* Botón buscar (columna 2 dentro de .buscar) */
+.botonBuscar {
+  grid-column: 2 / 3;
+  padding: 9px 12px;
+  border-radius: 8px;
+  border: none;
+  background-color: #a2d2ff; /* azul pastel */
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color .2s, transform .05s;
+}
+.botonBuscar:hover { background-color: #74c0fc; }
+.botonBuscar:active { transform: translateY(1px); }
+
+/* Contador (fila inferior dentro de .buscar) -> alineado a la derecha */
+.contador {
+  grid-column: 2 / 3;      /* en la segunda columna (alineado con el botón) */
+  grid-row: 2 / 3;         /* segunda fila */
+  width: 100%;
+  text-align: right;       /* alineado a la derecha */
+  background-color: #f6f5f3;
+  padding: 8px 12px;
+  border-radius: 8px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.03);
+  color: #555;
+}
+
+/* pequeños ajustes responsivos */
+@media (max-width: 780px) {
+  .barras {
+    grid-template-columns: 1fr; /* colapsa a una columna */
+    grid-template-rows: auto auto auto;
+  }
+  .fila2 { order: 2; }        /* inputs debajo del título */
+  .buscar { grid-column: 1 / 2; grid-row: 3 / 4; justify-items: stretch; }
+  .barraBusqueda { width: 100%; }
+  .contador { grid-column: 1 / 2; text-align: center; }
+}

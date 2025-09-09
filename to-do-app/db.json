@@ -1,0 +1,74 @@
+{
+  "Tareas": [
+    {
+      "id": "95f8",
+      "text": "Cocinar",
+      "completed": false
+    },
+    {
+      "id": "f0db",
+      "text": "Cocinar",
+      "completed": false
+    },
+    {
+      "id": "837f",
+      "text": "Limpiar",
+      "completed": false
+    },
+    {
+      "id": "9fab",
+      "text": "Caminar",
+      "completed": false
+    },
+    {
+      "id": "4485",
+      "text": "Cocinar",
+      "completed": false
+    },
+    {
+      "id": "0f39",
+      "text": "Nora",
+      "completed": false
+    },
+    {
+      "id": "746e",
+      "text": "Planchar",
+      "completed": false
+    },
+    {
+      "id": "828d",
+      "text": "Correr",
+      "completed": false
+    },
+    {
+      "id": "e7e0",
+      "text": "Ir al supermercado",
+      "completed": false
+    },
+    {
+      "id": "a595",
+      "text": "Pasear al perro",
+      "completed": false
+    },
+    {
+      "id": "9c4b",
+      "text": "Ir al gimnasio",
+      "completed": false
+    },
+    {
+      "id": "3062",
+      "text": "Ir a la cita médica",
+      "completed": false
+    },
+    {
+      "id": "6d83",
+      "text": "Ir al parque",
+      "completed": false
+    },
+    {
+      "id": "ebe5",
+      "text": "Ir al banco",
+      "completed": false
+    }
+  ]
+}

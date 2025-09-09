@@ -1,0 +1,23 @@
+/* Contenedor principal del Header */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; /* Logo a la izquierda, nombre al lado */
+  padding: 10px 20px;
+  background-color: #f0f0f0; /* Fondo suave */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Logo */
+.header .Logo {
+  width: 60px; /* Ajustable, puedes reducir si deseas */
+  height: auto;
+  margin-right: 15px;
+}
+
+/* Nombre de la app */
+.header .NombreApp {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #333;
+}
