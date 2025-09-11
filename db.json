@@ -1,0 +1,17 @@
+{
+  "Tareas": [
+    {
+      "id": "69f5",
+      "text": "Barrer",
+      "completed": true
+    },
+    {
+      "id": "edbe",
+      "text": "Limpiar",
+      "completed": true
+    }
+  ],
+  "usuarios":[
+    
+  ]
+}

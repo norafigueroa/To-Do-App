@@ -1,0 +1,23 @@
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+  padding: 10px 20px;
+  background-color:  #ffe6cc; 
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+
+.header .Logo {
+  width: 60px;
+  height: auto;
+  margin-right: 15px;
+}
+
+
+.header .NombreApp {
+  font-size: 50px;
+  font-weight: bold;
+  color: brown;
+}
