@@ -7,8 +7,8 @@ function Header() {
 
       <div className="header">
         
-        <img className='Logo' src="https://cdn-icons-png.flaticon.com/512/14991/14991808.png" alt="Logo" />
-        <h1 className="NombreApp">PlanifyTask</h1> 
+        <img className='Logo' src="https://cdn-icons-png.flaticon.com/512/12178/12178616.png" alt="Logo" />
+        <h1 className="NombreApp">PlanifyList</h1> 
         
       </div>
 

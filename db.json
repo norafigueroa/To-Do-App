@@ -1,17 +1,96 @@
 {
   "Tareas": [
     {
-      "id": "69f5",
-      "text": "Barrer",
-      "completed": true
+      "id": "57dd",
+      "text": "Ir al banco",
+      "completed": false,
+      "idUser": "c7cc"
     },
     {
-      "id": "edbe",
-      "text": "Limpiar",
-      "completed": true
+      "id": "f9ce",
+      "text": "Cocinar pollo",
+      "completed": true,
+      "idUser": "c7cc"
+    },
+    {
+      "id": "c89e",
+      "text": "Pasear",
+      "completed": false,
+      "idUser": "5c43"
+    },
+    {
+      "id": "6220",
+      "text": "Hacer ejercicio",
+      "completed": true,
+      "idUser": "5c43"
+    },
+    {
+      "id": "97b2",
+      "text": "Estudiar para el examen",
+      "completed": true,
+      "idUser": "ef6b"
+    },
+    {
+      "id": "96f7",
+      "text": "Hacer tarea de matemáticas",
+      "completed": true,
+      "idUser": "ef6b"
+    },
+    {
+      "id": "4ec5",
+      "text": "Ir al cine",
+      "completed": false,
+      "idUser": "c7cc"
+    },
+    {
+      "id": "f798",
+      "text": "Limpiar la casa",
+      "completed": false,
+      "idUser": "8f90"
+    },
+    {
+      "id": "1127",
+      "text": "Ir al médico",
+      "completed": false,
+      "idUser": "8f90"
+    },
+    {
+      "id": "75d4",
+      "text": "Lavar la ropa",
+      "completed": false,
+      "idUser": "c7cc"
     }
   ],
-  "usuarios":[
-    
+  "Usuarios": [
+    {
+      "id": "ecc3",
+      "nombre": "Nora",
+      "correo": "nora@gmail.com",
+      "contrasena": "12345678"
+    },
+    {
+      "id": "8f90",
+      "nombre": "Fio",
+      "correo": "fio@gmail.com",
+      "contrasena": "qwertyuio"
+    },
+    {
+      "id": "c7cc",
+      "nombre": "Caleb",
+      "correo": "caleb@gmail.com",
+      "contrasena": "qwertyuiop"
+    },
+    {
+      "id": "5c43",
+      "nombre": "Luis",
+      "correo": "luis@gmail.com",
+      "contrasena": "asdfgh12345"
+    },
+    {
+      "id": "ef6b",
+      "nombre": "Madelin",
+      "correo": "madelin@gmail.com",
+      "contrasena": "poiu0987"
+    }
   ]
 }

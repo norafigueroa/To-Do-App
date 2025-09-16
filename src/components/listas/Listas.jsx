@@ -118,39 +118,43 @@ const eliminarTarea = async (id) => {
 
     <div>
 
-      <div className="listaTareas">
+      <div className='contenedorListas'>
 
-        <h3>⏳Tareas Pendientes</h3>
+        <div className="pendientes">
 
-        {tareasPendientes.length === 0 ? (
-          <p>No existen tareas pendientes</p>) : 
-          (tareasPendientes.map((tarea) => (
-            <div key={tarea.id} className="filaTarea">
-              <input type="checkbox"  checked={tarea.completed} onChange={() => completarTarea(tarea.id)} />
-              <span>{tarea.text}</span>
-              <button className="botonEditar" onClick={() => editarTarea(tarea.id)}>✏️</button>
-              <button className="botonEliminar" onClick={() => eliminarTarea(tarea.id)}>🗑️</button>
-            </div>
-          ))
-    )}
-      </div>
+          <h3>⏳Tareas Pendientes</h3>
 
-      <div className="listaTareas">
-
-        <h3>✅Tareas Completadas</h3>
-
-        {tareasCompletadas.length === 0 ? (
-          <p>No existen tareas completadas</p>) : 
-          (tareasCompletadas.map((tarea) => (
-            <div key={tarea.id} className="filaTarea">
-              <input
-                type="checkbox" checked={tarea.completed} onChange={() => completarTarea(tarea.id)} />
-              <span>{tarea.text}</span>
-              <button className="botonEditar" onClick={() => editarTarea(tarea.id)}>✏️</button>
-              <button className="botonEliminar" onClick={() => eliminarTarea(tarea.id)}>🗑️</button>
-            </div>
-          ))
+          {tareasPendientes.length === 0 ? (
+            <p>No existen tareas pendientes</p>) : 
+            (tareasPendientes.map((tarea) => (
+              <div key={tarea.id} className="filaTarea">
+                <input type="checkbox"  checked={tarea.completed} onChange={() => completarTarea(tarea.id)} />
+                <span>{tarea.text}</span>
+                <button className="botonEditar" onClick={() => editarTarea(tarea.id)}>✏️</button>
+                <button className="botonEliminar" onClick={() => eliminarTarea(tarea.id)}>🗑️</button>
+              </div>
+            ))
         )}
+        </div>
+
+        <div className="completadas">
+
+          <h3>✅Tareas Completadas</h3>
+
+          {tareasCompletadas.length === 0 ? (
+            <p>No existen tareas completadas</p>) : 
+            (tareasCompletadas.map((tarea) => (
+              <div key={tarea.id} className="filaTarea">
+                <input
+                  type="checkbox" checked={tarea.completed} onChange={() => completarTarea(tarea.id)} />
+                <span>{tarea.text}</span>
+                <button className="botonEditar" onClick={() => editarTarea(tarea.id)}>✏️</button>
+                <button className="botonEliminar" onClick={() => eliminarTarea(tarea.id)}>🗑️</button>
+              </div>
+            ))
+          )}
+        </div>
+
       </div>
 
     </div>

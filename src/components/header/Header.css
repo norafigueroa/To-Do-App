@@ -1,23 +1,24 @@
-
 .header {
   display: flex;
   align-items: center;
-  justify-content: center; 
-  padding: 10px 20px;
-  background-color:  #ffe6cc; 
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  justify-content: center;
+  padding: 15px 0;
+  background: #ffdac1;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0,0,0,0.25);
+  Width: 100%;
+  
 }
 
-
-.header .Logo {
-  width: 60px;
-  height: auto;
-  margin-right: 15px;
+.Logo {
+  width: 70px;
+  height: 70px;
+  margin-right: 1rem;
 }
 
-
-.header .NombreApp {
-  font-size: 50px;
-  font-weight: bold;
+.NombreApp {
+  font-family: 'Roboto', sans-serif;
+  font-size: 35px;
+  font-weight: 600;
   color: brown;
 }
